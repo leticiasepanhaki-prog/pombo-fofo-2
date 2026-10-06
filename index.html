@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore repertórios socioculturais para usar na redação do ENEM.">
+
+    <title>Repertório ENEM | Explore, Aprenda e Argumente</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="background-decoration decoration-one"></div>
+    <div class="background-decoration decoration-two"></div>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <span class="logo-symbol">✦</span>
+            <span>REPERTÓRIO<span class="logo-highlight">ENEM</span></span>
+        </div>
+
+        <div class="header-tag">
+            <span>●</span> Modo estudo
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero" id="inicio">
+            <div class="hero-badge">
+                <span>✦</span> Seu banco de ideias para a redação
+            </div>
+
+            <h1>
+                Encontre o repertório
+                <span>certo para sua redação.</span>
+            </h1>
+
+            <p class="hero-description">
+                Escolha um tema, selecione o tipo de repertório e descubra
+                como transformar conhecimento em argumento.
+            </p>
+        </section>
+
+
+        <!-- ETAPA 1 -->
+
+        <section class="etapa ativa" id="etapa-tema">
+
+            <div class="etapa-topo">
+                <div>
+                    <span class="numero-etapa">01</span>
+                    <h2>Qual é o tema?</h2>
+                    <p>Escolha a área que você quer explorar.</p>
+                </div>
+            </div>
+
+            <div class="opcoes-grid" id="temas-container">
+                <!-- Preenchido pelo JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- ETAPA 2 -->
+
+        <section class="etapa" id="etapa-tipo">
+
+            <button class="botao-voltar" onclick="voltarParaTemas()">
+                ← Voltar
+            </button>
+
+            <div class="etapa-topo">
+                <div>
+                    <span class="numero-etapa">02</span>
+                    <h2>Que tipo de repertório?</h2>
+                    <p>Escolha uma categoria para refinar sua busca.</p>
+                </div>
+            </div>
+
+            <div class="opcoes-grid" id="tipos-container">
+                <!-- Preenchido pelo JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+
+        <section class="resultado-section" id="resultado-section">
+
+            <button class="botao-voltar" onclick="voltarParaTipos()">
+                ← Alterar filtros
+            </button>
+
+            <div class="resultado-cabecalho">
+                <div>
+                    <span class="resultado-label">REPERTÓRIO ENCONTRADO</span>
+                    <h2 id="resultado-titulo">Paulo Freire</h2>
+                </div>
+
+                <button class="botao-favorito" id="botao-favorito" onclick="alternarFavorito()">
+                    ♡
+                </button>
+            </div>
+
+            <div class="tags-resultado">
+                <span id="tag-tema"></span>
+                <span id="tag-tipo"></span>
+            </div>
+
+            <div class="repertorio-card">
+
+                <div class="icone-repertorio" id="resultado-icone">
+                    📚
+                </div>
+
+                <div class="repertorio-conteudo">
+
+                    <h3 id="resultado-subtitulo">
+                        Educação e pensamento crítico
+                    </h3>
+
+                    <div class="bloco-info">
+                        <div class="icone-info">💡</div>
+
+                        <div>
+                            <h4>O repertório</h4>
+                            <p id="resultado-descricao"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="bloco-info">
+                        <div class="icone-info">🎯</div>
+
+                        <div>
+                            <h4>Como usar na redação</h4>
+                            <p id="resultado-como-usar"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="citacao-box">
+                        <div class="citacao-topo">
+                            <span>✦</span>
+                            EXEMPLO DE APLICAÇÃO
+                        </div>
+
+                        <p id="resultado-exemplo"></p>
+                    </div>
+
+
+                    <div class="palavras-chave">
+                        <strong>Palavras-chave</strong>
+                        <div id="resultado-palavras"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="acoes">
+
+                <button class="botao-secundario" onclick="novoRepertorio()">
+                    <span>↻</span>
+                    Outro repertório
+                </button>
+
+                <button class="botao-principal" onclick="recomecar()">
+                    ✦
+                    Nova busca
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- REPERTÓRIO ALEATÓRIO -->
+
+        <section class="surpresa">
+
+            <div class="surpresa-icon">🎲</div>
+
+            <div>
+                <h3>Quer estudar algo diferente?</h3>
+                <p>Deixe o jogo escolher um repertório para você.</p>
+            </div>
+
+            <button onclick="repertorioAleatorio()">
+                Surpreenda-me
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Repertório ENEM · Uma ferramenta para facilitar seus estudos.
+        </p>
+
+        <span>✦</span>
+    </footer>
+
+
+    <script src="js/repertorios.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
